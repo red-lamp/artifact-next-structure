@@ -1,0 +1,7 @@
+const actionType = {
+  GET_USERS_FETCHING: 'GET_USERS_FETCHING',
+  GET_USERS_SUCCESS: 'GET_USERS_SUCCESS',
+  GET_USERS_FAILURE: 'GET_USERS_FAILURE',
+}
+
+export default actionType

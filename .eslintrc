@@ -1,0 +1,49 @@
+{
+  "root": true,
+  "parser": "babel-eslint",
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended"
+  ],
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "alias": {
+        "map": [
+          ["components", "./components"],
+          ["redux", "./redux"],
+          ["styles", "./styles"]
+        ],
+        "extensions": [".ts", ".js", ".jsx", ".json"]
+      }
+    }
+  },
+  "rules": {
+    "semi": [2, "never"],
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-filename-extension": [0],
+    "react/jsx-one-expression-per-line": "off",
+    "jsx-quotes": ["error", "prefer-single"],
+    "react/jsx-props-no-spreading": "off",
+    "react/prop-types": "off",
+    "react/button-has-type": "off",
+    "no-use-before-define": "off"
+  },
+  "plugins": []
+}
